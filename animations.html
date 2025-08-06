@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            animation: myAnimation 10s infinite alternate;
+        }
+
+        @keyframes myAnimation {
+            0% {
+                left: 0px;
+                background-color: red;
+                opacity: 1;
+                transform: translateX(0);
+            }
+            50% {
+                left: 50px;
+                background-color: blue;
+                opacity: 0.5;
+                
+                transform: translateX(100px);
+                transform: rotate(45deg);
+            }
+            100% {
+                left : 100px;
+                background-color: green;
+                transform: translateX(200px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div>red</div>
+    </div>
+</body>
+</html>
